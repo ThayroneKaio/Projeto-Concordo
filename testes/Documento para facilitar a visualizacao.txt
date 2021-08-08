@@ -1,0 +1,58 @@
+ESTE DOCUMENTO É APENAS PARA FACILITAR A VISUALIZACAO
+
+USE ISSO SE QUISER TESTAR O PROGAMA SEM O TRATAMENTO DE ERRO:
+
+creater-user fulano@hotmail.com abc123 Fulano
+creater-user sicrano@hotmail.com def123 Sicrano
+creater-user cigano@hotmail.com ghi123 Cigano
+login fulano@hotmail.com abc123
+login sicrano@hotmail.com def123
+login cigano@hotmail.com ghi123
+disconnect 3
+creater-server 1 casa-de-ninguem
+creater-server 2 terra-de-ninguem
+list-servers
+set-server-desc 1 casa-de-ninguem
+vou mudar minha descricao
+set-server-invite-code 1 casa-de-ninguem semdono
+set-server-invite-code 2 terra-de-ninguem NULL
+enter-server 1 terra-de-ninguem NULL
+enter-server 2 casa-de-ninguem semdono
+leave-server 1 terra-de-ninguem
+remove-server 2 terra-de-ninguem
+list-servers
+list-participants
+creater-channel 1 chat
+enter-channel 2 chat
+leave-channel 2 chat
+creater-channel 2 papo
+enter-channel 1 papo
+list-channels
+quit
+
+USE ISSO SE QUISER TESTAR O PROGRAMA COM O TRATAMENTO DE ERRO:
+
+creater-user fulano@hotmail.com abc123 Fulano
+creater-user fulano@hotmail.com abc123 Fulano
+creater-user cigano@hotmail.com ghi123 Cigano
+login fulano@hotmail.com abc123
+login sicrano@hotmail.com def123
+login cigano@hotmail.com ghi123
+disconnect 3
+creater-server 1 casa-de-ninguem
+creater-server 1 casa-de-ninguem
+set-server-desc 2 casa-de-ninguem
+set-server-desc 1 casa-de-alguem
+set-server-invite-code 1 casa-de-ninguem semdono
+set-server-invite-code 2 casa-de-ninguem NULL
+creater-server 2 terra-de-ninguem
+remove-server 1 terra-de-ninguem
+remove-server 2 terra-de-alguem
+enter-server 2 casa-de-ninguem comdono
+leave-server 2 casa-de-ninguem
+leave-server 2 casa-de-alguem
+creater-channel 1 chat
+creater-channel 1 chat
+enter-channel 2 papo
+leave-channel 2 chat
+quit
